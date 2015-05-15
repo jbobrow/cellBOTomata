@@ -1,0 +1,24 @@
+{
+  "name": "cellBOTomata",
+  "version": "1.0.0",
+  "description": "Each tweet is a new generation of the ruleset last tweeted to the bot. (i.e. if you want to see a new cellular automata patter in your feed, simply tweet @cellBOTomata with a hashtag #newRules",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jbobrow/cellBOTomata.git"
+  },
+  "keywords": [
+    "twitterbot",
+    "cellular",
+    "automata"
+  ],
+  "author": "Jonathan Bobrow",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jbobrow/cellBOTomata/issues"
+  },
+  "homepage": "https://github.com/jbobrow/cellBOTomata"
+}
