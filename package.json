@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/jbobrow/cellBOTomata/issues"
   },
-  "homepage": "https://github.com/jbobrow/cellBOTomata"
+  "homepage": "https://github.com/jbobrow/cellBOTomata",
+  "dependencies": {
+    "twit": "^1.1.20"
+  }
 }
