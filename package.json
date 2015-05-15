@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/jbobrow/cellBOTomata",
   "dependencies": {
+    "async": "^0.9.0",
     "twit": "^1.1.20"
   }
 }
