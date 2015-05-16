@@ -4,7 +4,8 @@
   "description": "Each tweet is a new generation of the ruleset last tweeted to the bot. (i.e. if you want to see a new cellular automata patter in your feed, simply tweet @cellBOTomata with a hashtag #newRules",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
