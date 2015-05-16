@@ -13,7 +13,7 @@ var t = new Twit({
 // for testing purpose
 getDummyTweet = function(cb) {
   var botData = {
-    tweet         : 'You should probably keep an eye on that http://t.co/nbg6jDGUmN in the next hour...just saying...',
+    tweet         : 'This is a test tweet, nothing more to see here. Thanks @cellBOTomata',
     tweetID       : '123456789',
     tweetUsername : 'cellBOTomata'
   };
