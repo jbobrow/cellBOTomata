@@ -10,6 +10,16 @@ var t = new Twit({
   access_token_secret   : process.env.CELLBOTOMATA_TWIT_ACCESS_TOKEN_SECRET
 });
 
+// for testing purpose
+getDummyTweet = function(cb) {
+  var botData = {
+    tweet         : 'You should probably keep an eye on that http://t.co/nbg6jDGUmN in the next hour...just saying...',
+    tweetID       : '123456789',
+    tweetUsername : 'cellBOTomata'
+  };
+  cb(null, botData);
+}
+
 // get a tweet
 getPublicTweet = function(cb) {
   t.get('search/tweets', {q: '@cellBOTomata', count: 1, result_type: 'recent', lang: 'en'}, function(err, data, response) {
@@ -38,12 +48,12 @@ postTweet = function(botData, cb) {
 // main run function
 run = function() {
   async.waterfall([
-    getPublicTweet//, 
+    getDummyTweet, 
     // extractWordsFromTweet, 
     // readRuleset, 
     // generatePattern,
     // formatTweet,
-    // postTweet
+    postTweet
   ],
   function(err, botData) {
     if (err) {
@@ -55,3 +65,13 @@ run = function() {
     console.log('Base tweet: ', botData.baseTweet);
   });
 }
+
+// set an interval with which this should run
+setInterval(function() {
+  try {
+    run();
+  }
+  catch (e) {
+    console.log(e);
+  }
+}, 2 * 60 * 1000);	// milliseconds
