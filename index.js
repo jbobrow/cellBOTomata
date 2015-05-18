@@ -67,11 +67,11 @@ run = function() {
 }
 
 // set an interval with which this should run
-setInterval(function() {
-  try {
-    run();
-  }
-  catch (e) {
-    console.log(e);
-  }
-}, 2 * 60 * 1000);	// milliseconds
+// setInterval(function() {
+//   try {
+//     run();
+//   }
+//   catch (e) {
+//     console.log(e);
+//   }
+// }, 2 * 60 * 1000);	// milliseconds
